@@ -1,1 +1,86 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="website.css">
+    <script src="portfolio.js"></script>
+    <title>Website</title>
+</head>
+
+<body>
+<div>
+    <header class="container">
+        <h1>Christian Thomas</h1>
+        <h2 id="titles">Teacher, Coach, Developer</h2>
+
+        <img src="meindisney1.jpeg" class="img-thumbnail img-circle" alt="Responsive image">
+        <nav>
+            <ul>
+                <li><a href="#top">&#8594;Top of Page</a></li>
+                <li><a href="#about">&#8594;About me</a></li>
+                <li><a href="#experiences">&#8594;Experiences</a></li>
+                <li><a href="#resume">&#8594;Resume/Certification(s)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="top" class="top">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img class="slideShow" src="wwbeach.jpeg" alt="Slide 1">
+                </div>
+                <div class="mySlides">
+                    <img class="slideShow" src="epcot.jpeg" alt="Slide 2">
+                </div>
+                <div id="casasoccer" class="mySlides">
+                    <img class="slideShow" src="flowerandgorden.jpeg" alt="Slide 3">
+                </div>
+                <div class="mySlides">
+                    <img class="slideShow" src="neworleans.jpeg" alt="Slide 4">
+                </div>
+                <div class="mySlides">
+                    <img class="slideShow" src="withthedogs.jpeg" alt="Slide 5">
+                </div>
+                <div class="mySlides">
+                    <img class="slideShow" src="disneyhalf.jpeg" alt="Slide 5">
+                </div>
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+
+        </section>
+
+        <section id="about" class="hoverable">
+            <h4>About me</h4>
+            <p >I'm Christian Thomas, a teacher, coach, and aspiring web developer. I've dedicated seven years to teaching at Lindenwold Middle School, collaborating with eight fellow physical education teachers in that time. My college background is in education.
+                However, over the last year and a half, inspired by discussions with friends who work within tech, I've developed a keen interest in transitioning to a career as a web developer. In August 2022, I embarked on the journey of self-learning web development. Since completing my boot camp, I honed my skills through platforms like LeetCode and CodeWars, preparing for a career shift into web development. Technology and problem-solving have always been my passions, and I'm eager for a new challenge.
+                Alongside my professional pursuits, I'm committed to learning Spanish, maintaining an impressive <span id="spanishStreak"></span> streak on Duolingo as of now.</p>
+        </section>
+
+        <section id="experiences" class="hoverable">
+            <h4>Professional Experiences</h4>
+            <p >In my capacity as a physical education teacher, I successfully navigated a challenging and diverse environment by promoting collaboration to address educational challenges. Simultaneously, coaching in three sports honed my leadership and teamwork skills, providing a valuable foundation for the dynamic world of web development.<br>
+                Beyond the classroom, my experiences underscore effective communication, strategic planning, and a steadfast commitment to well-rounded development – qualities directly applicable to seamless collaboration within a team of web developers. I bring not only technical expertise but also a collaborative spirit and a genuine passion for achieving collective goals in the fast-paced field of technology.</p>
+        </section>
+
+        <section class="flex-container resume" id="resume">
+            <span class="resume"><a href="Resume.pdf">&#8594;Resume</a></span>
+            <span class="certification"><a href="Bootcamp Certificate.pdf">&#8594;Certificate</a></span>
+        </section>
+
+        <!-- <section id="projects" class="projects">
+            <h4>Projects</h4>
+            ... Projects content ...
+        </section> -->
+    </main>
+</div>
+
+<div class="cursor-gradient"></div>
+</body>
+
+</html>
