@@ -6,7 +6,6 @@ export default function Header() {
     <Navbar bg="dark" variant="dark" expand="md" className="py-3">
       <Container>
         <Navbar.Brand href="#hero" className="fw-bold fs-4">
-          Christian Thomas
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="portfolio-navbar" />
         <Navbar.Collapse id="portfolio-navbar">
