@@ -1,61 +1,143 @@
-.App {
-  text-align: center;
+/* orange palette */
+
+:root {
+  --color-accent: #f15025;
+  --color-white: #ffffff;
+  --color-light: #e6e8e6;
+  --color-medium: #ced0ce;
+  --color-dark: #191919;
+  --color-darkest: #111111;
+  --color-highlight: #f15025;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Navbar */
+.navbar {
+  background-color: var(--color-dark);
+  transition: background-color 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar .nav-link {
+  color: var(--color-white);
+  transition: color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar .nav-link:hover {
+  color: var(--color-accent);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-brand {
+  color: var(--color-white);
 }
 
+/* Hero Section */
+#hero {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  padding: 5rem 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-light {
+  border-color: var(--color-white);
+  color: var(--color-white);
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+/* Sections */
+section {
+  padding: 4rem 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#projects, #tech, #contact {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+}
+
+/* Cards */
+.card {
+  border: none;
+  background-color: var(--color-light);
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  border-left: 4px solid var(--color-accent);
+}
+
+.card-title {
+  color: var(--color-accent);
+}
+
+.btn-outline-primary {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border-color: var(--color-accent);
+}
+
+/* Contact Section */
+#contact {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+#contact .btn-outline-light:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border-color: var(--color-accent);
+}
+
+/* Tech Icon Tooltips */
 .tech-icon {
   position: relative;
   display: inline-block;
   margin: 0.5rem;
   cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.tech-icon:hover {
+  transform: scale(1.1);
+  filter: brightness(1.25);
+}
+
+.tech-icon:hover .tooltip-text {
+  color: var(--color-accent);
 }
 
 .tech-icon .tooltip-text {
   visibility: hidden;
   width: max-content;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--color-dark);
+  color: var(--color-white);
   text-align: center;
   padding: 4px 8px;
   border-radius: 6px;
   font-size: 0.8rem;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
+  top: 115%;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
@@ -66,4 +148,9 @@
 .tech-icon:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
+}
+
+/* Toggle button */
+.theme-toggle {
+  display: none;
 }

@@ -3,7 +3,7 @@ import { Container, Navbar, Nav } from 'react-bootstrap';
 
 export default function Hero() {
   return (
-    <Navbar bg="dark" variant="dark" expand="md" className="py-3 justify-content-center">
+    <Navbar bg="dark" variant="dark" expand="md" className="py-1 justify-content-center">
       <Container className="d-flex flex-column align-items-center">
         <Navbar.Brand href="#hero" className="fw-bold fs-4 text-center mb-2">
         </Navbar.Brand>
