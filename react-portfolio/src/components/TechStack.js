@@ -54,9 +54,19 @@ export default function TechStack() {
                 <div className="tooltip-text">Spring Boot</div>
               </div>
               <div className="tech-icon">
+                <img
+                  src="https://www.thymeleaf.org/images/thymeleaf.png"
+                  alt="Thymeleaf"
+                  width="30"
+                  height="30"
+                />
+                <div className="tooltip-text">Thymeleaf</div>
+              </div>
+              <div className="tech-icon">
                 <i className="devicon-mysql-plain colored" style={{ fontSize: '2rem' }}></i>
                 <div className="tooltip-text">MySQL</div>
               </div>
+
             </div>
           </div>
 

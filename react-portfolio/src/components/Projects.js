@@ -18,7 +18,7 @@ export default function Projects() {
                   based on skill level, location, and preferences.
                 </p>
                 <p className="mb-1">
-                  <strong>Tech:</strong> Java, Spring Boot, HTML, CSS, Agile
+                  <strong>Tech:</strong> Java, Spring Boot, Thymeleaf, HTML, CSS, Agile
                 </p>
               </div>
               <div className="card-footer bg-white border-0">
