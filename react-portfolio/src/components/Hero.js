@@ -12,6 +12,7 @@ export default function Hero() {
           <Nav className="text-center">
             <Nav.Link href="#tech">Tech Stack</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
             <Nav.Link href="/v1/index.html" target="_blank" rel="noopener noreferrer">
               v1 Site

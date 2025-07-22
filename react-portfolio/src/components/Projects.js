@@ -15,7 +15,8 @@ export default function Projects() {
                 <h5 className="card-title fw-bold">Cartnr</h5>
                 <p className="card-text">
                   A solo-built geosocial networking app that helps golfers find compatible playing partners
-                  based on skill level, location, and preferences.
+                  based on skill level, location, and preferences. Built server-side rendering with Thymeleaf
+                  templates for user profile creation and matchmaking views.
                 </p>
                 <p className="mb-1">
                   <strong>Tech:</strong> Java, Spring Boot, Thymeleaf, HTML, CSS, Agile
