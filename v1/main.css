@@ -1,0 +1,260 @@
+/* Common styles for all media queries */
+body {
+    background-color: #780000;
+}
+
+.cursor-gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.img-thumbnail {
+    width: 150px;
+    height: auto;
+    padding: 0;
+    border: none;
+    border-radius: 100px;
+}
+
+h1 {
+    padding-top: 76px;
+    color: #fdf0d5;
+}
+
+h2 {
+    color: #fdf0d5;
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: #8d99ae;
+}
+
+p {
+    color: #fdf0d5;
+    text-align: center;
+    font-size: large;
+}
+
+/* 320px media query */
+@media (min-width: 320px) {
+    p {
+        color: #fdf0d5;
+        text-align: center;
+        font-size: large;
+    }
+}
+@media (max-width: 767px) {
+    .top {
+        display: none;
+    }
+}
+/* 768px media query */
+@media (min-width: 768px) {
+    p {
+        color: #fdf0d5;
+        text-align: center;
+        font-size: large;
+    }
+
+    img.slideshow-container {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .mySlides {
+        display: none; /* Hide all slides initially */
+    }
+
+    .mySlides:first-child {
+        display: block; /* Display the first slide initially */
+    }
+
+    a.next,
+    a.prev {
+        position: absolute;
+        top: 700px;
+        transform: translateY(-50%);
+        font-size: 24px; /* Adjust font size as needed */
+        color: white;
+        text-decoration: none;
+    }
+
+    h1 {
+        padding-top: 76px;
+        color: #fdf0d5;
+    }
+
+    h2 {
+        color: #fdf0d5;
+        font-size: 20px;
+        margin-top: 16px;
+    }
+
+    a.prev {
+        top: 500px;
+        left: 350px; /* Adjust left positioning as needed */
+    }
+
+    a.next {
+        top: 500px;
+        right: 275px; /* Adjust right positioning as needed */
+    }
+
+}
+
+
+
+/* 951px media query */
+@media (min-width: 951px) {
+    .container {
+        padding-left: 96px;
+    }
+
+    header {
+        position: -webkit-sticky;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex flex-start;
+        max-height: 100vh;
+        width: 50%;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    a {
+        color: #8d99ae;
+    }
+
+    main {
+        position: absolute;
+        top: 0; /* Change top to 0 to place the main content at the top */
+        right: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px;
+        width: 450px;
+    }
+
+    img.slideShow {
+        height: auto; /* Set height to auto to maintain the aspect ratio */
+        width: 300px; /* Set width to 100% to fill the container */
+        max-width: 100%;
+        margin-bottom: 20px; /* Add margin for spacing */
+    }
+
+    .flex-container {
+        display: flex;
+    }
+
+    .certification {
+        margin-left: 50px;
+        text-decoration: solid;
+    }
+
+    .cursor-gradient {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    .top {
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        height: 100vh;
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .slideshow-container {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .slideshow-container .mySlides {
+        display: none; /* Hide all slides initially */
+    }
+
+    .slideshow-container .mySlides:first-child {
+        display: block; /* Display the first slide initially */
+    }
+
+    section#top.top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        margin-bottom: 20px; /* Adjust the margin-bottom as needed */
+    }
+
+    a.next,
+    a.prev {
+        position: sticky;
+        top: 600px;
+        transform: translateY(-50%);
+        font-size: 24px; /* Adjust font size as needed */
+        color: white;
+        text-decoration: none;
+    }
+
+    a.prev {
+        position: sticky;
+        left: 125px; /* Adjust left positioning as needed */
+        margin-top: 10px;
+    }
+
+    a.next {
+        position: sticky;
+        right: 250px; /* Adjust right positioning as needed */
+        margin-left: 150px;
+    }
+
+    p {
+        /* Styles for all <p> elements on laptop-sized screens */
+        position: relative;
+        overflow: hidden;
+        transition: filter 0.2s ease-in-out;
+    }
+
+    p::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        filter: blur(5px);
+        z-index: -1;
+        transition: filter 0.2s ease-in-out;
+    }
+
+    p.hovered::before {
+        filter: blur(25px);
+    }
+}
