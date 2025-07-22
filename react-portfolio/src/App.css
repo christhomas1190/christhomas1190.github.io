@@ -18,7 +18,6 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Navbar */
 .navbar {
   background-color: var(--color-dark);
   transition: background-color 0.3s;
@@ -33,9 +32,7 @@ body {
   color: var(--color-accent);
 }
 
-.navbar-brand {
-  color: var(--color-white);
-}
+
 
 /* Hero Section */
 #hero {
