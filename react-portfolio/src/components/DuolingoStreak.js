@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
 export default function DuolingoStreak() {
-  const baseStreak = 1381;
-  const [streak, setStreak] = useState(null); // start as null
+  const baseStreak = 1381; // ← Set this to today’s streak
+  const [streak, setStreak] = useState(baseStreak);
 
   useEffect(() => {
     const now = new Date();
@@ -25,13 +25,12 @@ export default function DuolingoStreak() {
         setStreak(parseInt(storedStreak));
       }
     } else {
+      // If no record exists, initialize at 1381
       localStorage.setItem('duoStreak', baseStreak);
       localStorage.setItem('duoStreakLastUpdate', today.toISOString());
       setStreak(baseStreak);
     }
   }, []);
 
-  return (
-    <>{streak ?? '...'}</>
-  );
+  return <>{streak}</>;
 }
