@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React, { useEffect, useState } from 'react';
+import DuolingoStreak from './DuolingoStreak';
 export default function About() {
   return (
     <section className="py-5 bg-light text-dark" id="about">
@@ -7,20 +7,21 @@ export default function About() {
         <h2 className="text-center fw-bold mb-4">About Me</h2>
         <p className="lead">
           I'm <strong>Christian Thomas</strong>, a dedicated educator turned full-stack developer.
-          For nine years, I taught at Lindenwold Middle School and led student-athletes as head coach in soccer,
-          wrestling, and track. While I’ve always enjoyed mentoring and strategizing for growth,
-          my passion for problem-solving led me to pivot toward tech.
+          For seven years, I taught at Lindenwold Middle School and coached student-athletes in soccer,
+          wrestling, and track. While I’ve always enjoyed mentoring and leading, my passion for problem-solving
+          led me to pivot into software development.
         </p>
         <p>
-          Since 2022, I’ve immersed myself in software development, completing an intensive full-stack
-          program through Zip Code Wilmington and diving deep into technologies like Java, Spring Boot,
-          MySQL, and React. I’ve worked on real-world projects, from a news aggregation platform to
-          a networking app for golfers.
+          Since 2022, I’ve immersed myself in software development — completing a highly selective,
+          <strong>12-week, 1,000+ hour full-time program</strong> at Zip Code Wilmington. The experience
+          was hands-on and intense, covering Java, Spring Boot, MySQL, React, Agile methodologies,
+          and real-world team collaboration. I’ve since built full-stack applications, including a
+          news aggregation platform and a networking app for golfers.
         </p>
-        <p>
-          Outside of tech, I’m always learning — currently leveling up my Spanish skills and maintaining
-          a <strong>1380-day streak</strong> on Duolingo.
-        </p>
+
+       <p>
+         I’m also committed to lifelong learning; I’ve maintained a <strong><DuolingoStreak /></strong> day Duolingo streak.
+       </p>
       </div>
     </section>
   );
