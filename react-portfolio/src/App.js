@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import './App.css';
 import About from './components/About';
 import TechStack from './components/TechStack';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <About />
       <TechStack />
+      <Projects />
     </>
   );
 }
