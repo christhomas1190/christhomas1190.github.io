@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import './App.css';
 import About from './components/About';
+import TechStack from './components/TechStack';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Hero />
       <About />
+      <TechStack />
     </>
   );
 }
